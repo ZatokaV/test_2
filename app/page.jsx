@@ -1,6 +1,15 @@
+"use client";
+import { useState } from "react";
+
 import styles from "./page.css";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const handleSend = () => {
+    setEmail("");
+    alert("Done!"); 
+  };
+
   return (
     <main>
       <section className="hero">
@@ -189,6 +198,32 @@ export default function Home() {
         </div>
         <div className="bestsellers__roundabout--slider">
           <img src="icons/slider.svg" alt="slider" />
+        </div>
+      </section>
+
+      <section className="subscribe">
+        <div className="subscribe__content">
+          <h3 className="subscribe__title">SUBSCRIBE TO NEWS & SALES</h3>
+          <input
+            type="text"
+            placeholder="YOUR E-MAIL*"
+            className="subscribe__input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <p className="subscribe__policy">
+            *I GIVE MY CONSENT FOR A&nbsp;
+            <a href="#" className="subscribe__policy--link">
+              PRIVACY SETTINGS.
+            </a>
+          </p>
+          <button
+            type="button"
+            className="subscribe__policy--btn"
+            onClick={handleSend}
+          >
+            SEND
+          </button>
         </div>
       </section>
     </main>

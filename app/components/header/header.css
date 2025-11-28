@@ -15,13 +15,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 16px;
-  margin: 0 auto;
 }
 
 .header__navbar {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%);
 }
 
 .header__navbar--list {

@@ -185,7 +185,7 @@
 
 /*-----------BESTSELLERS-----------*/
 
-.bestsellers{
+.bestsellers {
   margin-bottom: 120px;
 }
 
@@ -243,8 +243,64 @@
   margin-bottom: 8px;
 }
 
-.bestsellers__roundabout--slider{
+.bestsellers__roundabout--slider {
   position: absolute;
   left: 50%;
-  transform: translatey(-10px);
+  transform: translate(-50%, -10px);
+}
+
+/*-----------SUBSCRIBE-----------*/
+
+.subscribe {
+  margin: 0 457px;
+  margin-bottom: 120px;
+
+  text-transform: uppercase;
+}
+
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.subscribe__title {
+  font-size: 20px;
+  margin-bottom: 64px;
+}
+
+.subscribe__input {
+  width: 100%;
+
+  margin-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 19px;
+
+  color: #d0cdc9;
+  font-size: 14px;
+}
+
+.subscribe__policy {
+  color: #d0cdc9;
+  font-size: 10px;
+  text-align: center;
+  padding: 0 90px;
+  margin-bottom: 40px;
+}
+
+.subscribe__policy--link {
+  text-decoration: underline;
+}
+
+.subscribe__policy--btn {
+  padding: 18px 0;
+
+  width: 100%;
+  background-color: #e7e5e8;
+
+  color: #080808;
+  font-size: 20px;
 }
