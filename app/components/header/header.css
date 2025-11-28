@@ -62,13 +62,13 @@
   }
 
   .header__burger--btn {
+    display: block;
     background: transparent;
     border: none;
     margin-top: 5px;
   }
 
   .header__burger {
-    display: block;
     background: transparent;
   }
 }

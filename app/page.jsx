@@ -7,18 +7,26 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const handleSend = () => {
     setEmail("");
-    alert("Done!"); 
+    alert("Done!");
   };
 
   return (
     <main>
       <section className="hero">
         <div className="hero__banner">
-          <img
-            src="images/hero.png"
-            alt="women in black dress"
-            className="hero__image"
-          />
+          <picture>
+            <source
+              media="(max-width: 1200px)"
+              srcSet="/images/tablet_hero.png"
+            />
+
+            <img
+              src="/images/hero.png"
+              alt="woman"
+              className="hero__image"
+            />
+          </picture>
+
           <div className="hero__button-wrapper">
             <button className="hero__button" type="button">
               NEW ARRIVALS
@@ -37,7 +45,10 @@ export default function Home() {
                 className="collections__image"
               />
               <h3>CLASSICS BASICS</h3>
-              <p>Classic style collection - great for workdays</p>
+              <p className="collections__item--description">
+                Classic style collection - <br className="tablet-break" />
+                great for workdays
+              </p>
             </a>
           </li>
 
@@ -48,8 +59,11 @@ export default function Home() {
                 alt="woman in a white dress"
                 className="collections__image"
               />
-              <h3>SPORT BADDIE</h3>
-              <p>Sportie style collection - for gym supremacy</p>
+              <br className="tablet-break" /> <h3>SPORT BADDIE</h3>
+              <p className="collections__item--description">
+                Sportie style collection - <br className="tablet-break" />
+                for gym supremacy
+              </p>
             </a>
           </li>
 
@@ -61,7 +75,10 @@ export default function Home() {
                 className="collections__image"
               />
               <h3>SWIM SWIM</h3>
-              <p>Summer style collection - for holidays u deserved</p>
+              <p className="collections__item--description">
+                Summer style collection - <br className="tablet-break" />
+                for holidays u deserved
+              </p>
             </a>
           </li>
 
@@ -73,7 +90,10 @@ export default function Home() {
                 className="collections__image"
               />
               <h3>CASUAL CHIC</h3>
-              <p>Casual style collection - for everyday fashion</p>
+              <p className="collections__item--description">
+                Casual style collection - <br className="tablet-break" />
+                for everyday fashion
+              </p>
             </a>
           </li>
 
@@ -85,7 +105,10 @@ export default function Home() {
                 className="collections__image"
               />
               <h3>ELEGANT EVENNING</h3>
-              <p>Elegant style collection - for loving evenings</p>
+              <p className="collections__item--description">
+                Elegant style collection - <br className="tablet-break" />
+                for loving evenings
+              </p>
             </a>
           </li>
 
@@ -97,7 +120,10 @@ export default function Home() {
                 className="collections__image"
               />
               <h3>VIEW ALL COLLECTIONS</h3>
-              <p>All styles we have - always here for u</p>
+              <p className="collections__item--description">
+                All styles we have - <br className="tablet-break" />
+                always here for u
+              </p>
             </a>
           </li>
         </ul>
@@ -105,11 +131,17 @@ export default function Home() {
 
       <section className="sale">
         <div className="sale__content">
+          <picture>
+            <source 
+            media="(max-width: 1200px)"
+            srcSet="images/tablet_sale.jpg"
+            />
           <img
             src="images/sale.png"
-            alt="woman in a brown dress"
+            alt="woman"
             className="sale__content--image"
           />
+          </picture>
           <div className="sale__button--wrapper">
             <button className="sale__content--button" type="button">
               SALE UP TO 30%
@@ -119,7 +151,7 @@ export default function Home() {
       </section>
 
       <section className="bestsellers">
-        <h2 className="bestsellers__title">BESTSELLERS</h2>
+        <h2 className="bestsellers__title el__dsctp-only">BESTSELLERS</h2>
 
         <div className="bestsellers__roundabout--wrapper">
           <button className="bestsellers__roundabout--left-btn">
@@ -169,7 +201,7 @@ export default function Home() {
               </a>
             </li>
 
-            <li className="bestsellers__roundabout--item">
+            <li className="bestsellers__roundabout--item el__dsctp-only">
               <a href="#">
                 <div className="roundabout__image--wrapper">
                   <img
