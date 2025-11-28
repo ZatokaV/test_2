@@ -39,3 +39,36 @@
   align-items: center;
   gap: 24px;
 }
+
+.header__burger--btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__content {
+    padding: 53px 20px 19px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__burger--btn {
+    background: transparent;
+    border: none;
+    margin-top: 5px;
+  }
+
+  .header__burger {
+    display: block;
+    background: transparent;
+  }
+}

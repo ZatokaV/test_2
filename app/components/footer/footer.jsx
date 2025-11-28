@@ -59,6 +59,9 @@ export default function Footer() {
             <a href="mailto:EXAMPLE@GMAIL.COM" className="footer__email">
               EXAMPLE@GMAIL.COM
             </a>
+            <a href="tel:+380671234567" className="contact-phone tablet_element">
+              +38 (067) 123-45-67
+            </a>
             <p className="footer__location">WILCA 44, WARSAW, POLAND</p>
           </address>
 
@@ -78,11 +81,20 @@ export default function Footer() {
                 <img src="icons/telegram.svg" alt="telegram logo" />
               </a>
             </li>
+            <li className="tablet_element">
+              <a href="#" className="footer__social--image-wraper">
+                <img src="icons/facebook.svg" alt="facebook logo" />
+              </a>
+            </li>
           </ul>
         </div>
 
         <div className="footer__content--bottom">
-          <img src="icons/footer-logo.svg" alt="logo" className="footer__big-logo" />
+          <img
+            src="icons/footer-logo.svg"
+            alt="logo"
+            className="footer__big-logo"
+          />
         </div>
       </div>
     </footer>

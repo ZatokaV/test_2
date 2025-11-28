@@ -7,6 +7,11 @@ export default function Header() {
         <div className="header__logo">
           <img src="icons/logo.svg" alt="site logo" />
         </div>
+        <button className="header__burger--btn" type="button">
+          <div className="header__burger">
+            <img src="icons/burger.svg" alt="menu" />
+          </div>
+        </button>
         <nav className="header__navbar">
           <ul className="header__navbar--list">
             <li>catalog</li>
