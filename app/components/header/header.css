@@ -44,6 +44,8 @@
   display: none;
 }
 
+/*-----------TABLET-----------*/
+
 @media (max-width: 1200px) {
   .header__navbar {
     display: none;
@@ -70,5 +72,15 @@
 
   .header__burger {
     background: transparent;
+  }
+}
+
+/*-----------MOBILE-----------*/
+@media (max-width: 756px) {
+  .header__content {
+    padding: 61px 20px 16px 20px;
+  }
+  .header__burger--btn {
+    margin-top: 3px;
   }
 }

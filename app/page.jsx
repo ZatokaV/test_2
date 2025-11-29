@@ -16,15 +16,15 @@ export default function Home() {
         <div className="hero__banner">
           <picture>
             <source
+              media="(max-width: 768px)"
+              srcSet="/images/phone_hero.jpg"
+            />
+            <source
               media="(max-width: 1200px)"
               srcSet="/images/tablet_hero.png"
             />
 
-            <img
-              src="/images/hero.png"
-              alt="woman"
-              className="hero__image"
-            />
+            <img src="/images/hero.png" alt="woman" className="hero__image" />
           </picture>
 
           <div className="hero__button-wrapper">
@@ -132,15 +132,20 @@ export default function Home() {
       <section className="sale">
         <div className="sale__content">
           <picture>
-            <source 
-            media="(max-width: 1200px)"
-            srcSet="images/tablet_sale.jpg"
+
+            <source
+              media="(max-width: 768px)"
+              srcSet="/images/phone_sale.jpg"
             />
-          <img
-            src="images/sale.png"
-            alt="woman"
-            className="sale__content--image"
-          />
+            <source
+              media="(max-width: 1200px)"
+              srcSet="images/tablet_sale.jpg"
+            />
+            <img
+              src="images/sale.png"
+              alt="woman"
+              className="sale__content--image"
+            />
           </picture>
           <div className="sale__button--wrapper">
             <button className="sale__content--button" type="button">
@@ -151,7 +156,7 @@ export default function Home() {
       </section>
 
       <section className="bestsellers">
-        <h2 className="bestsellers__title el__dsctp-only">BESTSELLERS</h2>
+        <h2 className="bestsellers__title">BESTSELLERS</h2>
 
         <div className="bestsellers__roundabout--wrapper">
           <button className="bestsellers__roundabout--left-btn">
@@ -181,7 +186,7 @@ export default function Home() {
               </a>
             </li>
 
-            <li className="bestsellers__roundabout--item">
+            <li className="bestsellers__roundabout--item el__dsctp-tblt-only">
               <a href="#">
                 <div className="roundabout__image--wrapper">
                   <img
