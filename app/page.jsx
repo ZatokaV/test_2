@@ -132,7 +132,6 @@ export default function Home() {
       <section className="sale">
         <div className="sale__content">
           <picture>
-
             <source
               media="(max-width: 768px)"
               srcSet="/images/phone_sale.jpg"
@@ -239,7 +238,13 @@ export default function Home() {
       </section>
 
       <section className="subscribe">
-        <div className="subscribe__content">
+        <form
+          className="subscribe__content"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSend();
+          }}
+        >
           <h3 className="subscribe__title">SUBSCRIBE TO NEWS & SALES</h3>
           <input
             type="text"
@@ -254,14 +259,10 @@ export default function Home() {
               PRIVACY SETTINGS.
             </a>
           </p>
-          <button
-            type="button"
-            className="subscribe__policy--btn"
-            onClick={handleSend}
-          >
+          <button type="submit" className="subscribe__policy--btn">
             SEND
           </button>
-        </div>
+        </form>
       </section>
     </main>
   );
