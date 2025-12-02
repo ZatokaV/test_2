@@ -42,9 +42,6 @@ footer {
 }
 
 .footer__navbar {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   white-space: nowrap;
 }
 
@@ -70,9 +67,9 @@ footer {
 }
 
 .footer__content--top {
-  margin: 15px 16px 0 4px;
-
-  display: flex;
+  margin: 15px 15px 0 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
@@ -138,12 +135,13 @@ footer {
 
 @media (max-width: 1200px) {
   .footer__content--top {
+    display: flex;
     flex-direction: column;
     margin: 0;
   }
 
   .footer__lang--btn {
-    font-size: 14px;    
+    font-size: 14px;
   }
 
   .footer__navbar {

@@ -1,14 +1,13 @@
 import "normalize.css/normalize.css";
-import "./globals.css";
+import '../styles/globals.css';
 
 import localFont from "next/font/local";
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 
-import "./globals.css";
 
 const steppe = localFont({
-  src: "./fonts/steppe-regular.ttf",
+  src: "../../public/fonts/steppe-regular.ttf",
   variable: "--font-steppe",
   display: "swap",
 });

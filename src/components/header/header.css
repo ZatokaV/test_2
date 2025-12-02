@@ -10,18 +10,11 @@
 }
 
 .header__content {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   padding: 32px 16px;
-}
-
-.header__navbar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 .header__navbar--list {
@@ -33,11 +26,13 @@
   font-weight: 400;
   color: #080808;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .header__actions--list {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 24px;
 }
 

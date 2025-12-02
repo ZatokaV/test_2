@@ -53,7 +53,7 @@ export default function Home() {
           </li>
 
           <li className="collections__item">
-            <a href="#" className="collections__link">
+            <a href="/category-1" className="collections__link">
               <img
                 src="images/collections_3.png"
                 alt="woman in a white dress"
