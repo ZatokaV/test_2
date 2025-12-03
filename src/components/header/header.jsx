@@ -4,9 +4,11 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__content">
-        <div className="header__logo">
-          <img src="icons/logo.svg" alt="site logo" />
-        </div>
+        <a href="/">
+          <div className="header__logo">
+            <img src="icons/logo.svg" alt="site logo" />
+          </div>
+        </a>
         <button className="header__burger--btn" type="button">
           <div className="header__burger">
             <img src="icons/burger.svg" alt="menu" />

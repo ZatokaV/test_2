@@ -1,0 +1,124 @@
+/*-------------BANER-------------*/
+
+.hero {
+  margin-bottom: 56px;
+}
+.category__hero--content {
+  background-image: url(/images/category-all-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category__hero--title {
+  margin-top: 48px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*-------------CATALOG-------------*/
+
+.catalog__title {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.catalog__filters {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  margin-bottom: 24px;
+}
+
+.catalog__filters--text {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.catalog__filters--btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: none;
+  border: none;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 120px;
+}
+
+/*-------------TABLET-------------*/
+
+@media (max-width: 1200px) {
+  .hero {
+    margin-bottom: 24px;
+  }
+  .catalog__title,
+  .catalog__filters {
+    margin: 0;
+  }
+  .catalog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 12px;
+  }
+}
+
+/*-------------PHONE-------------*/
+
+@media (max-width: 756px) {
+  .catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
+  .category__hero--content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+  }
+  .category__hero--title {
+    display: none;
+  }
+  .catalog__top {
+    margin: 26px 20px;
+  }
+  .catalog__title,
+  .catalog__filters--text {
+    font-size: 12px;
+  }
+
+  .hero {
+    margin-bottom: 16px;
+  }
+}

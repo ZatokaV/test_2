@@ -2,14 +2,9 @@
 import { useState } from "react";
 
 import styles from "./page.css";
+import Form from "../components/form/form";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const handleSend = () => {
-    setEmail("");
-    alert("Done!");
-  };
-
   return (
     <main>
       <section className="hero">
@@ -38,7 +33,7 @@ export default function Home() {
       <section className="collections">
         <ul className="collections__grid">
           <li className="collections__item collections__item--tall">
-            <a href="#" className="collections__link">
+            <a href="/category-2" className="collections__link">
               <img
                 src="images/collections_1.png"
                 alt="woman in a black shirt"
@@ -68,7 +63,7 @@ export default function Home() {
           </li>
 
           <li className="collections__item collections__item--tall">
-            <a href="#" className="collections__link">
+            <a href="/category-3" className="collections__link">
               <img
                 src="images/collections_5.png"
                 alt="a woman in a swimsuit"
@@ -83,7 +78,7 @@ export default function Home() {
           </li>
 
           <li className="collections__item">
-            <a href="#" className="collections__link">
+            <a href="/category-4" className="collections__link">
               <img
                 src="images/collections_2.png"
                 alt="woman in a white skirt"
@@ -98,7 +93,7 @@ export default function Home() {
           </li>
 
           <li className="collections__item collections__item--tall">
-            <a href="#" className="collections__link">
+            <a href="/category-5" className="collections__link">
               <img
                 src="images/collections_4.png"
                 alt="woman in an elegant shirt"
@@ -113,7 +108,7 @@ export default function Home() {
           </li>
 
           <li className="collections__item">
-            <a href="#" className="collections__link">
+            <a href="/category-all" className="collections__link">
               <img
                 src="images/collections_6.png"
                 alt="woman in a black jacket"
@@ -166,7 +161,7 @@ export default function Home() {
 
           <ul className="bestsellers__roundabout">
             <li className="bestsellers__roundabout--item">
-              <a href="#">
+              <a href="#" className="roundabout__link">
                 <div className="roundabout__image--wrapper">
                   <img
                     src="images/best-1.png"
@@ -174,19 +169,20 @@ export default function Home() {
                     className="roundabout__image"
                   />
                 </div>
+                <div className="roundabout__text-content">
+                  <h3 className="roundabout__item--title">LOREM IPSUM</h3>
 
-                <h3 className="roundabout__item--title">LOREM IPSUM</h3>
+                  <p className="roundabout__item--description">
+                    Lorem ipsum Dolores
+                  </p>
 
-                <p className="roundabout__item--description">
-                  Lorem ipsum Dolores
-                </p>
-
-                <span className="roundabout__item--price">5 200 €</span>
+                  <span className="roundabout__item--price">5 200 €</span>
+                </div>
               </a>
             </li>
 
             <li className="bestsellers__roundabout--item el__dsctp-tblt-only">
-              <a href="#">
+              <a href="#" className="roundabout__link">
                 <div className="roundabout__image--wrapper">
                   <img
                     src="images/best-2.png"
@@ -194,19 +190,20 @@ export default function Home() {
                     className="roundabout__image"
                   />
                 </div>
+                <div className="roundabout__text-content">
+                  <h3 className="roundabout__item--title">LOREM IPSUM</h3>
 
-                <h3 className="roundabout__item--title">LOREM IPSUM</h3>
+                  <p className="roundabout__item--description">
+                    Lorem ipsum Dolores
+                  </p>
 
-                <p className="roundabout__item--description">
-                  Lorem ipsum Dolores
-                </p>
-
-                <span className="roundabout__item--price">5 200 €</span>
+                  <span className="roundabout__item--price">5 200 €</span>
+                </div>
               </a>
             </li>
 
             <li className="bestsellers__roundabout--item el__dsctp-only">
-              <a href="#">
+              <a href="#" className="roundabout__link">
                 <div className="roundabout__image--wrapper">
                   <img
                     src="images/best-3.png"
@@ -214,14 +211,15 @@ export default function Home() {
                     className="roundabout__image"
                   />
                 </div>
+                <div className="roundabout__text-content">
+                  <h3 className="roundabout__item--title">LOREM IPSUM</h3>
 
-                <h3 className="roundabout__item--title">LOREM IPSUM</h3>
+                  <p className="roundabout__item--description">
+                    Lorem ipsum Dolores
+                  </p>
 
-                <p className="roundabout__item--description">
-                  Lorem ipsum Dolores
-                </p>
-
-                <span className="roundabout__item--price">5 200 €</span>
+                  <span className="roundabout__item--price">5 200 €</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -238,31 +236,7 @@ export default function Home() {
       </section>
 
       <section className="subscribe">
-        <form
-          className="subscribe__content"
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleSend();
-          }}
-        >
-          <h3 className="subscribe__title">SUBSCRIBE TO NEWS & SALES</h3>
-          <input
-            type="text"
-            placeholder="YOUR E-MAIL*"
-            className="subscribe__input"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <p className="subscribe__policy">
-            *I GIVE MY CONSENT FOR A&nbsp;
-            <a href="#" className="subscribe__policy--link">
-              PRIVACY SETTINGS.
-            </a>
-          </p>
-          <button type="submit" className="subscribe__policy--btn">
-            SEND
-          </button>
-        </form>
+        <Form />
       </section>
     </main>
   );
