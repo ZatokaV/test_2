@@ -11,7 +11,12 @@ export default function Header() {
         </a>
         <button className="header__burger--btn" type="button">
           <div className="header__burger">
-            <img src="icons/burger.svg" alt="menu" />
+            <label class="burger">
+              <input type="checkbox" class="burger__checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
         </button>
         <nav className="header__navbar">
