@@ -53,6 +53,7 @@
   align-items: center;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .catalog__grid {
@@ -63,6 +64,29 @@
   margin-right: 20px;
   margin-bottom: 120px;
 }
+
+/*-------------FILTERS-------------*/
+
+
+.filters__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.filters__panel {
+  background: #000;
+  max-width: 590px;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
 
 /*-------------TABLET-------------*/
 
@@ -123,3 +147,4 @@
     margin-bottom: 16px;
   }
 }
+

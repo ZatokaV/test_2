@@ -1,6 +1,9 @@
+"use client";
 import styles from "./category-1.css";
+import { useState } from "react";
 import Item from "../../components/item/item";
 import Form from "../../components/form/form";
+import FiltersPanel from "../../components/filters/filters";
 
 const fakeProducts = [
   {
@@ -108,6 +111,9 @@ const fakeProducts = [
 ];
 
 export default function AboutPage() {
+  const [isFiltersVisible, setFiltersVisible] = useState(false);
+  const toggleFilters = () => setFiltersVisible((prev) => !prev);
+
   return (
     <main>
       <section className="hero">
@@ -120,7 +126,11 @@ export default function AboutPage() {
         <div className="catalog__top">
           <h3 className="catalog__title">SPORT BADDIE</h3>
           <div className="catalog__filters">
-            <button className="catalog__filters--btn" type="button">
+            <button
+              className="catalog__filters--btn"
+              type="button"
+              onClick={toggleFilters}
+            >
               <div className="catalog__filters--ico">
                 <img src="/icons/filters.svg" alt="filters" />
               </div>
@@ -128,6 +138,16 @@ export default function AboutPage() {
             </button>
           </div>
         </div>
+        {isFiltersVisible && (
+          <div className="filters__overlay" onClick={toggleFilters}>
+            <div
+              className="filters__panel"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FiltersPanel />
+            </div>
+          </div>
+        )}
         <div className="catalog__grid">
           {fakeProducts.map((product) => (
             <Item
