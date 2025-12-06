@@ -1,24 +1,27 @@
-import styles from "./header.css";
+import "./header.css";
 
 export default function Header() {
   return (
     <header className="header">
+      <input type="checkbox" id="burger-toggle" className="burger__checkbox" />
+
       <div className="header__content">
         <a href="/">
           <div className="header__logo">
             <img src="icons/logo.svg" alt="site logo" />
           </div>
         </a>
-        <button className="header__burger--btn" type="button">
+
+        <label htmlFor="burger-toggle" className="header__burger--btn">
           <div className="header__burger">
-            <label class="burger">
-              <input type="checkbox" class="burger__checkbox" />
+            <div className="burger">
               <span></span>
               <span></span>
               <span></span>
-            </label>
+            </div>
           </div>
-        </button>
+        </label>
+
         <nav className="header__navbar">
           <ul className="header__navbar--list">
             <li>catalog</li>
@@ -26,6 +29,7 @@ export default function Header() {
             <li>contacts</li>
           </ul>
         </nav>
+
         <div className="header__actions">
           <ul className="header__actions--list">
             <li>
@@ -41,6 +45,14 @@ export default function Header() {
           </ul>
         </div>
       </div>
+
+      <nav className="mobile-menu">
+        <ul className="mobile-menu__list">
+          <li>catalog</li>
+          <li>about us</li>
+          <li>contacts</li>
+        </ul>
+      </nav>
     </header>
   );
 }
