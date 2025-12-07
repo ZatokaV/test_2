@@ -122,3 +122,38 @@
     margin-bottom: 16px;
   }
 }
+
+
+/*-------------FILTERS-------------*/
+
+.filters__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.filters__panel--wrapper {
+  padding: 50px 20px 140px;
+  background: #000;
+  max-width: 560px;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+@media (max-width: 756px) {
+  .filters__overlay {
+    position: relative;
+    justify-content: center;
+  }
+
+  .filters__panel--wrapper {
+    padding: 42px 25px;
+    max-width: 100%;
+  }
+}

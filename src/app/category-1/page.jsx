@@ -1,6 +1,6 @@
 "use client";
-import styles from "./category-1.css";
 import { useState } from "react";
+import styles from "./category-1.css";
 import Item from "../../components/item/item";
 import Form from "../../components/form/form";
 import FiltersPanel from "../../components/filters/filters";
@@ -110,7 +110,7 @@ const fakeProducts = [
   },
 ];
 
-export default function AboutPage() {
+export default function CategoryPage() {
   const [isFiltersVisible, setFiltersVisible] = useState(false);
   const toggleFilters = () => setFiltersVisible((prev) => !prev);
 
@@ -141,7 +141,7 @@ export default function AboutPage() {
         {isFiltersVisible && (
           <div className="filters__overlay" onClick={toggleFilters}>
             <div
-              className="filters__panel"
+              className="filters__panel--wrapper"
               onClick={(e) => e.stopPropagation()}
             >
               <FiltersPanel />

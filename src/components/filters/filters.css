@@ -1,9 +1,6 @@
 .filters__panel {
   color: #ffffff;
   font-size: 10px;
-  padding-left: 29px;
-  padding-right: 20px;
-  padding-top: 50px;
 }
 
 .filters__title {
@@ -18,7 +15,6 @@
   border: none;
   margin-bottom: 40px;
 }
-
 
 .filters__panel--color {
   display: flex;
@@ -66,8 +62,7 @@
   transform: scale(1.2);
 }
 
-
-.filters__panel--material, 
+.filters__panel--material,
 .filters__panel--size {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -95,7 +90,6 @@
   flex-direction: column;
   gap: 16px;
   border: none;
-  padding-bottom: 140px;
 }
 
 .filters__price-range {
@@ -130,7 +124,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s;
-  margin-top: -7px; 
+  margin-top: -7px;
 }
 
 .filters__price-range::-moz-range-thumb {
@@ -156,13 +150,39 @@
 
 .filters__price-min,
 .filters__price-max {
-  border: 0.5px solid #E7E5E84D;
+  border: 0.5px solid #e7e5e84d;
   padding: 8px 16px;
   border-radius: 4px;
   min-width: 40px;
   text-align: center;
 }
 
-filters__title_last{
+.filters__title_last {
   margin-bottom: 24px;
+}
+
+@media (max-width: 756px) {
+  .filters__panel--material,
+  .filters__panel--size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    border: none;
+    margin-bottom: 40px;
+    text-wrap: nowrap;
+  }
+
+  .filters__panel--size button,
+  .filters__panel--material button {
+    background: none;
+    border: 0.5px solid #FFFFFF80;
+    padding: 8px 16px;
+    color: #FFFFFF80;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
 }
