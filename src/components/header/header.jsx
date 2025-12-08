@@ -30,7 +30,7 @@ export default function Header() {
             <a href="/about-us">
               <li>about us</li>
             </a>
-            <a href="#">
+            <a href="/contacts">
               <li>contacts</li>
             </a>
           </ul>
@@ -60,7 +60,7 @@ export default function Header() {
           <a href="/about-us">
             <li>about us</li>
           </a>
-          <a href="#">
+          <a href="/contacts">
             <li>contacts</li>
           </a>
         </ul>

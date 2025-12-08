@@ -2,9 +2,7 @@ import "normalize.css/normalize.css";
 import "../styles/globals.css";
 
 import localFont from "next/font/local";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import BodyWithPageClass from "./BodyWithPageClass"; // <- це вже client component
+import BodyWithPageClass from "./BodyWithPageClass";
 
 const steppe = localFont({
   src: "../../public/fonts/steppe-regular.ttf",
@@ -21,9 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <BodyWithPageClass className={steppe.variable}>
-        <Header />
         {children}
-        <Footer />
       </BodyWithPageClass>
     </html>
   );
