@@ -79,9 +79,20 @@
   font-size: 11px;
   margin-bottom: 16px;
   text-transform: uppercase;
+  font-style: normal;
 }
 
 .contacts__data {
+  display: block;
   font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.contacts__social {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

@@ -45,7 +45,6 @@
 .ideology__content {
   display: flex;
   gap: 103px;
-
   margin-bottom: 104px;
 }
 
@@ -149,4 +148,70 @@
   content: "”";
   bottom: 140px;
   right: -20px;
+}
+
+@media (max-width: 1200px) {
+  .about-us {
+    height: 632px;
+  }
+
+  .about-us__top {
+    margin-top: 104px;
+  }
+
+  .about-us__top--text {
+    font-size: 12px;
+    margin-top: 24px;
+    margin-left: 132px;
+    margin-right: 132px;
+    padding-bottom: 130px;
+  }
+  .history,
+  .ideology {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .history__content,
+  .ideology__content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+
+  .history__list,
+  .ideology__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-right: 20px;
+    margin-left: 97px;
+  }
+
+  .history__title,
+  .ideology__title {
+    border-bottom: #ffffff 1px solid;
+    font-size: 16px;
+    margin-left: 47px;
+  }
+
+  .quote__content {
+    margin: 104px 27px 104px 27px;
+    position: relative;
+    text-align: center;
+  }
+  .quote__text {
+    padding: auto;
+  }
+
+  .quote__content::before {
+    top: 0;
+    left: 0px;
+  }
+
+  .quote__content::after {
+    bottom: 100px;
+    right: 0px;
+  }
 }

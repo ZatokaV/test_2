@@ -42,6 +42,13 @@ export default function ContactsPage() {
               <p className="contacts__data">WILCA 44, WARSAW, POLAND</p>
             </address>
             <p className="contacts__sub-title">our  socials</p>
+            <ul className="contacts__social">
+              <li><a href="#"><img src="icons/instagram_black.svg" alt="icon" /></a></li>
+              <li><a href="#"><img src="icons/tiktok_black.svg" alt="icon" /></a></li>
+              <li><a href="#"><img src="icons/telegram_black.svg" alt="icon" /></a></li>
+              <li><a href="#"><img src="icons/facebook_black.svg" alt="icon" /></a></li>
+            </ul>
+            
           </div>
         </div>
       </div>
