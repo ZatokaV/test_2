@@ -149,3 +149,13 @@
     display: none !important;
   }
 }
+
+
+
+
+body.about-us-page header {
+  background-color: hsla(280, 6%, 90%, 0.8);
+  backdrop-filter: blur(4px);
+  border: none;
+  
+}

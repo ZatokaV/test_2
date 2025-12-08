@@ -1,10 +1,10 @@
 import "normalize.css/normalize.css";
-import '../styles/globals.css';
+import "../styles/globals.css";
 
 import localFont from "next/font/local";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-
+import BodyWithPageClass from "./BodyWithPageClass"; // <- це вже client component
 
 const steppe = localFont({
   src: "../../public/fonts/steppe-regular.ttf",
@@ -20,11 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={steppe.variable}>
+      <BodyWithPageClass className={steppe.variable}>
         <Header />
         {children}
         <Footer />
-      </body>
+      </BodyWithPageClass>
     </html>
   );
 }
