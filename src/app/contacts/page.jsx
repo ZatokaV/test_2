@@ -37,18 +37,42 @@ export default function ContactsPage() {
           <div className="contacts__main--right">
             <address>
               <p className="contacts__sub-title">our email</p>
-              <a className="contacts__data" href="mailto:EXAMPLE@GMAIL.COM" >EXAMPLE@GMAIL.COM</a>
+              <a className="contacts__data" href="mailto:EXAMPLE@GMAIL.COM">
+                EXAMPLE@GMAIL.COM
+              </a>
               <p className="contacts__sub-title">our address</p>
-              <p className="contacts__data">WILCA 44, WARSAW, POLAND</p>
+              <a
+                href="https://www.google.com/maps?q=WILCA+44,+WARSAW,+POLAND"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contacts__data"
+              >
+                WILCA 44, WARSAW, POLAND
+              </a>
             </address>
-            <p className="contacts__sub-title">our  socials</p>
+            <p className="contacts__sub-title">our socials</p>
             <ul className="contacts__social">
-              <li><a href="#"><img src="icons/instagram_black.svg" alt="icon" /></a></li>
-              <li><a href="#"><img src="icons/tiktok_black.svg" alt="icon" /></a></li>
-              <li><a href="#"><img src="icons/telegram_black.svg" alt="icon" /></a></li>
-              <li><a href="#"><img src="icons/facebook_black.svg" alt="icon" /></a></li>
+              <li>
+                <a href="#">
+                  <img src="icons/instagram_black.svg" alt="icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icons/tiktok_black.svg" alt="icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icons/telegram_black.svg" alt="icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="icons/facebook_black.svg" alt="icon" />
+                </a>
+              </li>
             </ul>
-            
           </div>
         </div>
       </div>

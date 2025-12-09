@@ -1,4 +1,42 @@
 import styles from "./article.css";
+import Item from "../../components/item/item";
+import Form from "../../components/form/form";
+
+const fakeProducts = [
+  {
+    id: 1,
+    title: "Шорти-бермуди зі складками та вмістом льону",
+    price: 22.99,
+    image: "/images/item_1.png",
+    colors: ["#000000", "#F5F5DC"],
+    discount: null,
+  },
+  {
+    id: 2,
+    title: "Сукня максі з відкритою спиною",
+    price: 45.0,
+    image: "/images/item_2.png",
+    colors: ["#FFFFFF", "#000000"],
+    discount: null,
+  },
+  {
+    id: 3,
+    title: "Топ бандо трикотажний базовий з декоративним вузлом",
+    price: 18.5,
+    oldPrice: 22.99,
+    image: "/images/item_3.png",
+    colors: ["#000000"],
+    discount: "-20%",
+  },
+  {
+    id: 4,
+    title: "Сорочка оверсайз",
+    price: 35.0,
+    image: "/images/item_4.png",
+    colors: ["#000000", "#FFFFFF", "#5D4037"],
+    discount: null,
+  },
+];
 
 export default function ArticlePage() {
   return (
@@ -102,6 +140,46 @@ export default function ArticlePage() {
             </details>
           </div>
         </div>
+      </section>
+
+      <section className="article__propose">
+        <h2 className="article__propose--title">
+          ЗБЕРІТЬ ЦІЛЬНИЙ ОБРАЗ ДОДАВШИ
+        </h2>
+        <div className="article__propose--content">
+          {fakeProducts.map((product) => (
+            <Item
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              oldPrice={product.oldPrice}
+              image={product.image}
+              discount={product.discount}
+              colors={product.colors}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="article__like-it">
+        <h2 className="article__like-it--title">ВАМ ТАКОЖ МОЖЕ СПОДОБАТИСЬ </h2>
+        <div className="article__like-it--content">
+          {fakeProducts.map((product) => (
+            <Item
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              oldPrice={product.oldPrice}
+              image={product.image}
+              discount={product.discount}
+              colors={product.colors}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="subscribe">
+        <Form />
       </section>
     </main>
   );

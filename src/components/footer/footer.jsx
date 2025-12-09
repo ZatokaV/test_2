@@ -22,28 +22,28 @@ export default function Footer() {
           <nav className="footer__navbar">
             <ul className="footer__navbar--list">
               <li>
-                <a href="#">CLASSICS BASICS</a>
+                <a href="/category-2">CLASSICS BASICS</a>
               </li>
               <li>
-                <a href="#">CASUAL CHIC</a>
+                <a href="/category-4">CASUAL CHIC</a>
               </li>
               <li>
-                <a href="#">SPORT BADDIE</a>
+                <a href="/category-1">SPORT BADDIE</a>
               </li>
               <li>
-                <a href="#">SWIM SWIM</a>
+                <a href="/category-3">SWIM SWIM</a>
               </li>
               <li>
-                <a href="#">ELEGANT EVENING</a>
+                <a href="/category-5">ELEGANT EVENING</a>
               </li>
               <li>
-                <a href="#">ALL COLLECTIONS</a>
+                <a href="/category-all">ALL COLLECTIONS</a>
               </li>
               <li>
-                <a href="#">CONTACTS</a>
+                <a href="/contacts">CONTACTS</a>
               </li>
               <li>
-                <a href="#">ABOUT US</a>
+                <a href="/about-us">ABOUT US</a>
               </li>
             </ul>
           </nav>
@@ -59,10 +59,20 @@ export default function Footer() {
             <a href="mailto:EXAMPLE@GMAIL.COM" className="footer__email">
               EXAMPLE@GMAIL.COM
             </a>
-            <a href="tel:+380671234567" className="contact-phone tablet_element">
+            <a
+              href="tel:+380671234567"
+              className="contact-phone tablet_element"
+            >
               +38 (067) 123-45-67
             </a>
-            <p className="footer__location">WILCA 44, WARSAW, POLAND</p>
+            <a
+              href="https://www.google.com/maps?q=WILCA+44,+WARSAW,+POLAND"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__location"
+            >
+              WILCA 44, WARSAW, POLAND
+            </a>
           </address>
 
           <ul className="footer__social-media">
