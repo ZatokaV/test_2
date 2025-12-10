@@ -19,7 +19,7 @@ export default function Form() {
     >
       <h3 className="subscribe__title">SUBSCRIBE TO NEWS & SALES</h3>
       <input
-        type="text"
+        type="email"
         placeholder="YOUR E-MAIL*"
         className="subscribe__input"
         value={email}

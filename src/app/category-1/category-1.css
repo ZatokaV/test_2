@@ -87,17 +87,6 @@
   overflow: auto;
 }
 
-@media (max-width: 756px) {
-  .filters__overlay {
-    position: relative;
-    justify-content: center;
-  }
-
-  .filters__panel--wrapper {
-    padding: 42px 25px;
-    max-width: 100%;
-  }
-}
 
 /*-------------TABLET-------------*/
 
@@ -158,3 +147,4 @@
     margin-bottom: 16px;
   }
 }
+

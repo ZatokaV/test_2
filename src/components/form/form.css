@@ -1,7 +1,9 @@
 /*-----------SUBSCRIBE-----------*/
 
 .subscribe {
-  margin: 0 457px;
+  margin-left: 457px;
+  margin-right: 457px;
+  margin-top: 0;
   margin-bottom: 120px;
 
   text-transform: uppercase;

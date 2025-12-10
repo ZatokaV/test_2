@@ -78,14 +78,14 @@ export default function ArticlePage() {
             <p className="article__card--article-code">ART. 1234350-46</p>
           </div>
           <div className="article__card--colors">
-            <div class="article__card--color">
-              <span class="article__card--dot black_dot"></span>
-              <span class="article__card--text">BLACK</span>
+            <div className="article__card--color">
+              <span className="article__card--dot black_dot"></span>
+              <span className="article__card--text">BLACK</span>
             </div>
 
-            <div class="article__card--color">
-              <span class="article__card--dot milk_dot"></span>
-              <span class="article__card--text">MILK</span>
+            <div className="article__card--color">
+              <span className="article__card--dot milk_dot"></span>
+              <span className="article__card--text">MILK</span>
             </div>
           </div>
 
@@ -117,7 +117,7 @@ export default function ArticlePage() {
           <div className="article__card--info">
             <details>
               <summary>ДЕТАЛЬНІШЕ</summary>
-              <div class="article__card--info-content">
+              <div className="article__card--info-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet magna scelerisque, vulputate tellus et, tristique
                 libero. Cras rhoncus bibendum ultrices. Fusce tellus enim,
@@ -129,7 +129,7 @@ export default function ArticlePage() {
 
             <details>
               <summary>СКЛАД</summary>
-              <div class="article__card--info-content">
+              <div className="article__card--info-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 sit amet magna scelerisque, vulputate tellus et, tristique
                 libero. Cras rhoncus bibendum ultrices. Fusce tellus enim,

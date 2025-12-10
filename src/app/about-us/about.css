@@ -9,7 +9,7 @@
 }
 
 .about-us__top {
-  margin-top: 96px;
+  margin-top: 94px;
   background-color: rgba(230, 228, 231, 0.8);
   backdrop-filter: blur(4px);
   border: none;
@@ -33,15 +33,27 @@
   text-transform: uppercase;
 }
 
-.history,
+.history {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 104px;
+}
+
 .ideology {
   color: #ffffff;
   text-transform: uppercase;
   margin-left: 16px;
   margin-right: 16px;
+  border-bottom: #ffffff 1px solid;
 }
 
-.history__content,
+.history__content{
+  display: flex;
+  gap: 103px;
+}
+
 .ideology__content {
   display: flex;
   gap: 103px;
@@ -93,9 +105,7 @@
   flex: 1;
 }
 
-.ideology {
-  border-bottom: #ffffff 1px solid;
-}
+
 
 .quote {
   color: #ffffff;

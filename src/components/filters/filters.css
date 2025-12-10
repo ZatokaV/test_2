@@ -14,10 +14,6 @@
   flex-direction: column;
   border: none;
   margin-bottom: 40px;
-}
-
-.filters__panel--color {
-  display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
@@ -175,9 +171,9 @@
   .filters__panel--size button,
   .filters__panel--material button {
     background: none;
-    border: 0.5px solid #FFFFFF80;
+    border: 0.5px solid #ffffff80;
     padding: 8px 16px;
-    color: #FFFFFF80;
+    color: #ffffff80;
     text-transform: uppercase;
     cursor: pointer;
     &:hover {

@@ -5,10 +5,8 @@ export default function ContactsPage() {
     <main className="contacts-page">
       <div className="content">
         <div className="contacts__page--top">
-          <a href="/">
-            <div className="contacts-page__logo">
-              <img src="icons/logo.svg" alt="site logo" />
-            </div>
+          <a href="/" className="contacts-page__logo">
+            <img src="icons/logo.svg" alt="site logo" />
           </a>
 
           <nav className="contacts-page__navbar">

@@ -24,15 +24,15 @@ export default function Header() {
 
         <nav className="header__navbar">
           <ul className="header__navbar--list">
-            <a href="/category-all">
-              <li>catalog</li>
-            </a>
-            <a href="/about-us">
-              <li>about us</li>
-            </a>
-            <a href="/contacts">
-              <li>contacts</li>
-            </a>
+            <li>
+              <a href="/category-all">catalog</a>
+            </li>
+            <li>
+              <a href="/about-us">about us</a>
+            </li>
+            <li>
+              <a href="/contacts">contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -54,15 +54,15 @@ export default function Header() {
 
       <nav className="mobile-menu">
         <ul className="mobile-menu__list">
-          <a href="/category-all">
-            <li>catalog</li>
-          </a>
-          <a href="/about-us">
-            <li>about us</li>
-          </a>
-          <a href="/contacts">
-            <li>contacts</li>
-          </a>
+          <li>
+            <a href="/category-all">catalog</a>
+          </li>
+          <li>
+            <a href="/about-us">about us</a>
+          </li>
+          <li>
+            <a href="/contacts">contacts</a>
+          </li>
         </ul>
       </nav>
     </header>
